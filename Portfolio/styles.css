@@ -1,0 +1,113 @@
+@keyframes blink {
+  50% { opacity: 0; }
+}
+.cursor::after {
+  content: '|';
+  animation: blink 0.7s steps(1) infinite;
+  color: #00ff00;
+}
+
+
+
+
+#btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* optional: keeps h1 and buttons vertically aligned */
+  padding: 1rem;
+  border: 10px solid skyblue;
+  background-color: skyblue;
+  font-size: 15px;
+  color: white;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 1rem; /* spacing between buttons */
+}
+
+body {
+  background: repeating-linear-gradient(
+    45deg,
+    #6aceec,
+    #32c4e8 10px,
+    #44aeec 10px,
+    #11bfef 20px
+  );
+}
+
+#container{
+  display: flex;
+  padding-bottom: 20px;
+  padding-top: 35px;
+  font-size: 40px;
+  color: white;
+  font-size: 50px
+}
+
+#bitmoji {
+  display: block;
+}
+#test {
+  display: block;
+}
+#c_Info {
+  font-size: 35px;
+}
+
+
+#about {
+  background-color: black;
+  float: right;
+  color: #00ff00; /* terminal green */
+  font-family: monospace;
+  margin-top: 25px;
+  padding: 1rem;
+  min-height: 100vh;
+  font-size: 25px;
+}
+
+#projects {
+  font-size: 30px;
+}
+
+#contact {
+  font-size: 30px;
+}
+
+#about,
+#projects,
+#contact {
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+#contact{
+  margin-top: 60px;
+  text-align: center;
+  color: white  
+}
+
+#imgBelt img {
+  width: 15%;
+  display: inline-block;
+  position: relative;
+}
+
+a img {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+a img:hover {
+  transform: translateY(-5px); /* moves image up slightly */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* optional: add subtle shadow */
+  cursor: pointer;
+}
+
+#projects img {
+  display: block;
+  width: 50%;
+  border: 5px solid white
+}
